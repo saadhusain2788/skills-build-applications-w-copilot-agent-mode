@@ -1,7 +1,7 @@
 from djongo import models
 
 class Team(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
 
     def __str__(self):
